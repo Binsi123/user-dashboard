@@ -66,7 +66,7 @@ const UserList = () => {
           onClick={() => setShowForm(true)}
           className="px-4 py-2 bg-[#0a7f8f] text-white  rounded-lg hover:bg-blue-700"
         >
-          +Add User
+          + Add User
         </button>
       </div>
 
