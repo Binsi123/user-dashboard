@@ -29,7 +29,7 @@ const UserList = () => {
 
   const onSubmit = (data) => {
     const newUser = {
-      id: users.length + 1 + Math.floor(Math.random() * 100),
+      id: users.length + 1 ,
       name: data.name,
       username: data.name.split(" ")[0],
       email: data.email,

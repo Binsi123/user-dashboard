@@ -42,7 +42,7 @@ const UserDetails = () => {
 
       <Link
         to="/"
-        className="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+        className="mt-6 px-4 py-2 bg-[#0a7f8f] text-white rounded-lg hover:bg-[#07666a] transition"
       >
         Back to Users
       </Link>
