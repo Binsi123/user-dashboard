@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Card from "../Componets/Cards";
-import { set, useForm } from "react-hook-form";
+import {  useForm } from "react-hook-form";
 
 const UserList = () => {
   const [users, setUsers] = useState([]);
@@ -115,7 +115,7 @@ const UserList = () => {
       {showForm && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
           <div className="bg-white rounded-xl shadow-lg w-[420px] p-6">
-            {/* Header */}
+        
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-semibold">Add User</h2>
               <button
@@ -126,7 +126,7 @@ const UserList = () => {
               </button>
             </div>
 
-            {/* Form */}
+            
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-3">
                 <input
@@ -169,7 +169,6 @@ const UserList = () => {
                 )}
               </div>
 
-              {/* Actions */}
               <div className="flex justify-end gap-3">
                 <button
                   type="button"
