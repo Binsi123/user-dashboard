@@ -27,10 +27,10 @@ const UserDetails = () => {
       <img
         src={`https://i.pravatar.cc/150?img=${user.id}`}
         alt={user.name}
-        className="w-24 h-24 rounded-full mb-4"
+        className="w-24 h-24 rounded-full mb-4 text-black"
       />
 
-      <h1 className="text-2xl font-bold mb-2">{user.name}</h1>
+      <h1 className="text-2xl font-bold mb-2 text-black">{user.name}</h1>
       <p className="text-gray-700 mt-1">Username: {user.username}</p>
       <p className="text-gray-700 mt-1">Email: {user.email}</p>
       <p className="text-gray-700 mt-1">Phone: {user.phone}</p>
@@ -42,7 +42,7 @@ const UserDetails = () => {
 
       <Link
         to="/"
-        className="mt-6 px-4 py-2 bg-[#0a7f8f] text-white rounded-lg hover:bg-[#07666a] transition"
+        className="mt-6 px-4 py-2 bg-[#0a7f8f] text-black rounded-lg hover:bg-[#00000000] transition"
       >
         Back to Users
       </Link>

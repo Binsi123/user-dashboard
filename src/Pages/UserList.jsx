@@ -61,7 +61,7 @@ const UserList = () => {
   return (
     <div className="min-h-screen w-full bg-gray-100 p-10">
       <div className="flex justify-between">
-        <p className="flex text-2xl font-bold justify-start">User Dashboard</p>
+        <p className="flex text-2xl font-bold justify-start text-black">User Dashboard</p>
         <button
           onClick={() => setShowForm(true)}
           className="px-4 py-2 bg-[#0a7f8f] text-white  rounded-lg hover:bg-blue-700"
@@ -76,13 +76,13 @@ const UserList = () => {
           placeholder="Search by name or username"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 flex-1"
+          className="px-4 py-2 rounded-lg border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-blue-500 flex-1"
         />
 
         <select
           value={companyFilter}
           onChange={(e) => setCompanyFilter(e.target.value)}
-          className="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="px-4 py-2 rounded-lg text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <option value="">All Companies</option>
           {companyNames.map((name) => (

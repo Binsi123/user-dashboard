@@ -1,7 +1,7 @@
 import "./App.css";
 import UserList from "./Pages/UserList";
 import UserDetails from "./Pages/UserDetails";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // ✅ Import Router, Routes, Route
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 function App() {
   return (
     <Router>
