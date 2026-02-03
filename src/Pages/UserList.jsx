@@ -117,7 +117,7 @@ const UserList = () => {
           <div className="bg-white rounded-xl shadow-lg w-[420px] p-6">
         
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-lg font-semibold">Add User</h2>
+              <h2 className="text-lg font-semibold text-black">Add User</h2>
               <button
                 onClick={() => setShowForm(false)}
                 className="text-gray-500 hover:text-black text-xl"
@@ -132,7 +132,7 @@ const UserList = () => {
                 <input
                   {...register("name", { required: "Name is required" })}
                   placeholder="Name"
-                  className="w-full border rounded-lg px-3 py-2"
+                  className="w-full border rounded-lg px-3 py-2 text-black"
                 />
                 {errors.name && (
                   <p className="text-red-500 text-sm">{errors.name.message}</p>
@@ -149,7 +149,7 @@ const UserList = () => {
                     },
                   })}
                   placeholder="Email"
-                  className="w-full border rounded-lg px-3 py-2"
+                  className="w-full border rounded-lg px-3 py-2 text-black"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm start-1">{errors.email.message}</p>
@@ -160,7 +160,7 @@ const UserList = () => {
                 <input
                   {...register("company", { required: "Company is required" })}
                   placeholder="Company"
-                  className="w-full border rounded-lg px-3 py-2"
+                  className="w-full border rounded-lg px-3 py-2 text-black"
                 />
                 {errors.company && (
                   <p className="text-red-500 text-sm">
