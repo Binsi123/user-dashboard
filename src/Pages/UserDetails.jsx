@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
 const UserDetails = () => {
-  const { id } = useParams(); // Get user ID from URL
+  const { id } = useParams(); 
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
